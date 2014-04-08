@@ -22,6 +22,8 @@
 		8718833E18F4A106005D5982 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8718832218F4A106005D5982 /* CoreData.framework */; };
 		8718834618F4A106005D5982 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8718834418F4A106005D5982 /* InfoPlist.strings */; };
 		8718834818F4A106005D5982 /* DataStructureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8718834718F4A106005D5982 /* DataStructureTests.m */; };
+		8718835418F4A119005D5982 /* LinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8718835318F4A119005D5982 /* LinkList.m */; };
+		8718835718F4A125005D5982 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 8718835618F4A125005D5982 /* Node.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		8718834318F4A106005D5982 /* DataStructureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataStructureTests-Info.plist"; sourceTree = "<group>"; };
 		8718834518F4A106005D5982 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8718834718F4A106005D5982 /* DataStructureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructureTests.m; sourceTree = "<group>"; };
+		8718835218F4A119005D5982 /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		8718835318F4A119005D5982 /* LinkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkList.m; sourceTree = "<group>"; };
+		8718835518F4A125005D5982 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		8718835618F4A125005D5982 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		8718832418F4A106005D5982 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				8718835118F4A10B005D5982 /* LinkList */,
 				8718832D18F4A106005D5982 /* AppDelegate.h */,
 				8718832E18F4A106005D5982 /* AppDelegate.m */,
 				8718833318F4A106005D5982 /* Images.xcassets */,
@@ -151,6 +158,17 @@
 				8718834418F4A106005D5982 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8718835118F4A10B005D5982 /* LinkList */ = {
+			isa = PBXGroup;
+			children = (
+				8718835218F4A119005D5982 /* LinkList.h */,
+				8718835318F4A119005D5982 /* LinkList.m */,
+				8718835518F4A125005D5982 /* Node.h */,
+				8718835618F4A125005D5982 /* Node.m */,
+			);
+			name = LinkList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,9 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8718835718F4A125005D5982 /* Node.m in Sources */,
 				8718833218F4A106005D5982 /* DataStructure.xcdatamodeld in Sources */,
 				8718832F18F4A106005D5982 /* AppDelegate.m in Sources */,
 				8718832B18F4A106005D5982 /* main.m in Sources */,
+				8718835418F4A119005D5982 /* LinkList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

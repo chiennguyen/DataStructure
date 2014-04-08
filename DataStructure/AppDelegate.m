@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LinkList.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,22 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    
+    //============== test code ==============
+    LinkList *list = [[LinkList alloc]init];
+    [list addBegin:@"one"];
+    [list addEnd:@"two"];
+    [list addAt:2 setData:@"three"];
+    
+    [list deleteNodeData:@"one"];
+    
+    NSLog([NSString stringWithFormat:@"%d",[list count] ]);
+    
+    list = nil;
+    
+    //========================================
+    
     return YES;
 }
 
