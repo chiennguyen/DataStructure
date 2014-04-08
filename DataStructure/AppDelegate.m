@@ -27,9 +27,10 @@
     LinkList *list = [[LinkList alloc]init];
     [list addBegin:@"one"];
     [list addEnd:@"two"];
-    [list addAt:2 setData:@"three"];
+    [list addEnd:@"three"];
+    [list addEnd:@"four"];
     
-    [list deleteNodeData:@"one"];
+    [list reverseList];
     
     NSLog([NSString stringWithFormat:@"%d",[list count] ]);
     

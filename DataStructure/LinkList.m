@@ -180,6 +180,30 @@
     
 }
 
+//============== reverse link list ==================
+-(void)reverseList
+{
+    Node *curNode, *prevNode, *tempNode;
+    
+    curNode = head;
+    prevNode=nil;
+    
+    //traverse the list
+    while(curNode!=nil)
+    {
+        NSLog(curNode.data);
+        tempNode = prevNode;
+        prevNode = curNode;
+        //traverse the list
+        curNode = curNode.next;
+        
+        prevNode.next = tempNode;
+        
+    }
+    head = prevNode;
+}
+
+
 /** Count the length ot the list
  */
 -(int)count

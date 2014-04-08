@@ -18,6 +18,7 @@
 -(BOOL)deleteNodeData:(id)data;
 -(BOOL)deleteNodeAtLocation:(int)location;
 
+-(void)reverseList;
 
 -(int)count;
 
